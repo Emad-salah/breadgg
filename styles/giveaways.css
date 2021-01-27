@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #211212;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #211212;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4A2B2B;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #211212;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background: #211212;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #321B1B;
+}
+
+.giveaway {
+    display: flex;
+    background: #A75110;
+    height: 31px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 12px 0;
+}
+
+.links  {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    line-height: 18px;
+    padding: 13px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.link.active {
+    border-radius: 100px;
+    background: #A75110;
+}
+
+.hamburger-menu-icon {
+    color: white;
+    height: 35px;
+    display: none;
+}
+
+.drop-down {
+    overflow: hidden;
+    transition: all .25s ease;
+    height: 0;
+    width: 100%;
+    background: #321B1B;
+}
+
+.drop-down.active {
+    height: 168px;
+}
+
+.drop-down-links {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.drop-down-link {
+    display: flex;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 18px 7.5%;
+    font-size: 16px;
+    border-bottom: 1px solid #4A2B2B;
+    cursor: pointer;
+}
+
+.page-container {
+ 
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 166px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.section-title {
+    color: white;
+    font-weight: bold;
+}
+
+.section-desc {
+    color: #A75110;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 49.5%;
+    border-radius: 50px;
+    border: 3px solid #A75110;
+    margin-bottom: 1%;
+    background: linear-gradient(180deg, rgba(253,221,149,1) 0%, rgba(229,196,153,1) 100%);
+}
+
+.card-img {
+    border-radius: 35px;
+    margin-right: 35px;
+}
+
+.card-title {
+    color: #211212;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 14px 5px 0;
+}
+
+.card-link {
+    margin-bottom: 20px;
+}
+
+.card-link-url {
+    text-decoration: none;
+    color: #B66316;
+    font-size: 16px;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.enter-giveaway-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 25px;
+    color: white;
+    margin-right: 8px;
+    background: #A85512;
+}
+
+.info-button {
+    cursor: pointer;
+}
+
+.countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 35px;
+    color: white;
+    margin: 10px 8px 0 0;
+    background: #CDA366;
+}
+
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.long-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.long-card {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    width: 100%;
+    border-radius: 50px;
+    border: 3px solid #A75110;
+    margin-bottom: 1%;
+    background: linear-gradient(180deg, rgba(253,221,149,1) 0%, rgba(229,196,153,1) 100%);
+}
+
+.long-card-img {
+    width: 146px;
+    height: 56px;
+    border-radius: 35px;
+    margin-right: 35px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.long-card-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.long-countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 25px;
+    color: white;
+    margin-right: 8px;
+    background: #CDA366;
+}
+
+.long-card-enter-giveaway-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 25px;
+    color: white;
+    margin-right: 8px;
+    background: #A75110;
+    
+}
+
+.card-details-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.winners {
+    text-align: center;
+    margin-right: 14px;
+}
+
+.winners-top-text {
+    color: #211212;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.winners-bottom-text {
+    text-decoration: none;
+    color: #B66316;
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 50px 0;
+}
+
+.logo {
+    width: 117px;
+    height: 34px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: white;
+    line-height: 16px;
+}
+
+.links-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #887070;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: #887070;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .4s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-background {
+    background: black;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.modal-container {
+    border-radius: 25px;
+    border: 2px solid #4B2B2B;
+    background: #211212;
+    width: 85%;
+    max-width: 980px;
+    padding: 43px;
+    z-index: 10;
+}
+.modal-title {
+    color: white;
+    font-size: 20px;
+}
+
+.modal-logo-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 25px;
+    color: white;
+    margin-right: 8px;
+    background: #4A2B2B;
+}
+
+.modal-close-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 25px;
+    color: white;
+    margin-right: 8px;
+    background: #4A2B2B;
+    cursor: pointer;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.info {
+    color:white;
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1;
+    overflow: auto;
+    max-height: 400px;
+}
+
+.info>ul {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.info>p {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 1235px) {
+    .nav-container {
+        width: 85%;
+        padding: 12px 0;
+    }   
+
+    .links {
+        display: none;
+    }
+    
+    .hamburger-menu-icon {
+        display: flex;
+    }  
+    
+    .page-container {
+        width: 85%;
+        padding: 0;
+    }
+
+    .header-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .header-text {
+        margin: 0;
+    }
+
+    .header-title {
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .header-desc {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin: 0;
+        line-height: normal;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .section-desc {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 30px;
+        margin: 0 15px 0 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+    }
+
+    .long-cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .long-card {
+        display: flex;
+        flex-direction: column;
+        width: 49.5%;
+        padding: 20px;
+    }
+
+    .long-card-img {
+        margin: 0 0 10px 0;
+    }
+
+    .card-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-info {
+        flex-direction: column;
+    }
+
+    .card-title {
+        margin: 0
+    }
+
+    .long-card-buttons {
+        flex-direction: column;
+    }
+
+    .winners {
+        margin: 10px 0;
+    }
+
+    .long-card-enter-giveaway-button {
+        font-size: 12px;
+        padding: 10.5px 25px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .logo-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        display: none;
+    }
+
+    .footer-links-container {
+        margin: 0 10px;
+        flex: 1;
+    }
+
+    .footer-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {   
+    .giveaway>h4 {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .header-container {
+        margin-bottom: 60px;
+    }
+
+    .header-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .header-desc {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-desc {
+        font-size: 14px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-link {
+        margin-bottom: 8px;
+    }
+
+    .enter-giveaway-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .countdown {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .long-card {
+        width: 100%;
+    }
+
+    .long-countdown {
+        padding: 18px 20px;
+    }
+
+    .long-card-enter-giveaway-button {
+        padding: 10.5px 20px;
+    }
+
+    .top-row {
+        flex-direction: column;
+    }
+
+    .modal-title {
+        margin-bottom: 10px;
+    }
+
+    .modal-close-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .modal-logo-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
