@@ -10,18 +10,15 @@ $(document).ready(function () {
 
       if (logo) {
         $(".modal-logo-button")
-          .css({
-            backgroundImage: `url(${logo})`
-          })
+          .css({ backgroundImage: `url(${logo})` })
           .text("");
       } else {
         $(".modal-logo-button")
-          .css({
-            backgroundImage: "none"
-          })
+          .css({ backgroundImage: "none" })
           .text((companyName || "Company Name").toUpperCase());
       }
     }
+
     $(".modal").toggleClass("hidden");
   });
 
