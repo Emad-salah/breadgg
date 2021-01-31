@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'proxima';
+  font-family: "proxima";
   src: url(/fonts/Proxima\ Nova\ Thin.otf);
   font-weight: lighter;
 }
 
 @font-face {
-  font-family: 'proxima';
+  font-family: "proxima";
   src: url(/fonts/ProximaNova-Regular.otf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'proxima';
+  font-family: "proxima";
   src: url(/fonts/Proxima\ Nova\ Bold.otf);
   font-weight: bold;
 }
@@ -44,7 +44,7 @@
 }
 
 body {
-  font-family: 'proxima';
+  font-family: "proxima";
   background: #211212;
 }
 
@@ -58,6 +58,7 @@ nav {
   margin: 0;
   background: #211212;
   flex-direction: column;
+  z-index: 10;
 }
 
 header {
@@ -295,12 +296,12 @@ footer {
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .modal-logo-button {
-  font-family: 'proxima';
+  font-family: "proxima";
   font-weight: bold;
   border: none;
   border-radius: 100px;
@@ -315,7 +316,7 @@ footer {
 }
 
 .modal-close-button {
-  font-family: 'proxima';
+  font-family: "proxima";
   font-weight: bold;
   border: none;
   border-radius: 100px;
