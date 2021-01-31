@@ -1,6 +1,11 @@
 $(document).ready(function () {
-  const formatTime = time =>
-    time ? time.toFixed(0).toString().padStart(2, "0") : "00";
+  const formatTime = time => {
+    if (time < 0 || !time) {
+      return "00";
+    }
+
+    return time.toFixed(0).toString().padStart(2, "0");
+  };
 
   $(".info-button, .modal-background, .modal-close-button").click(function (e) {
     if ($(this).hasClass("info-button")) {
@@ -28,10 +33,17 @@ $(document).ready(function () {
     $(".drop-down").toggleClass("active");
   });
 
-  const getUnit = (value, unit) =>
-    value === 1
-      ? `${value.toFixed(0)} ${unit}`
-      : `${value.toFixed(0)} ${unit}s`;
+  const getUnit = (value, unit) => {
+    if (value <= 0) {
+      return `0 ${unit}s`;
+    }
+
+    if (value === 1) {
+      return `${value.toFixed(0)} ${unit}`;
+    }
+
+    return `${value.toFixed(0)} ${unit}s`;
+  };
 
   setInterval(function () {
     $("[data-countdown-date]").each(function () {
