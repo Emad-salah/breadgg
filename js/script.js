@@ -24,9 +24,12 @@ $(document).ready(function () {
           .css({ backgroundImage: "none" })
           .text((companyName || "Company Name").toUpperCase());
       }
+
+      $(".modal").removeClass("hidden");
+      return;
     }
 
-    $(".modal").toggleClass("hidden");
+    $(".modal").addClass("hidden");
   });
 
   $(".hamburger-menu-icon").click(function (e) {
