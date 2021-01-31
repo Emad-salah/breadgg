@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'proxima';
+  src: url(/fonts/Proxima\ Nova\ Thin.otf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url(/fonts/ProximaNova-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url(/fonts/Proxima\ Nova\ Bold.otf);
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +44,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'proxima';
   background: #211212;
 }
 
@@ -69,6 +87,7 @@ footer {
   justify-content: space-between;
   width: 60%;
   padding: 12px 0;
+  max-width: 1200px;
 }
 
 .links {
@@ -132,13 +151,14 @@ footer {
   display: block;
   width: 60%;
   margin: auto;
+  max-width: 1200px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80px 0;
+  margin: 50px 0;
   padding-top: 116px;
 }
 
@@ -161,7 +181,6 @@ footer {
 }
 
 .header-img {
-  margin-bottom: 30px;
   object-fit: contain;
   width: 100%;
   max-width: 461px;
@@ -190,149 +209,12 @@ footer {
   color: #a75110;
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  padding: 16px;
-  width: 49.5%;
-  border-radius: 50px;
-  border: 3px solid #a75110;
-  margin-bottom: 1%;
-  background: linear-gradient(
-    180deg,
-    rgba(253, 221, 149, 1) 0%,
-    rgba(229, 196, 153, 1) 100%
-  );
-}
-
-.card-img {
-  border-radius: 35px;
-  margin-right: 35px;
-}
-
-.card-title {
-  color: #211212;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 2px;
-}
-
-.card-link {
-  margin-bottom: 8px;
-}
-
-.card-link-url {
-  text-decoration: none;
-  color: #b66316;
-  font-size: 16px;
-}
-
-.buttons-container {
-  display: flex;
-  align-items: center;
-}
-
-.claim-button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 100px;
-  padding: 18px 25px;
-  color: white;
-  margin-right: 8px;
-  background: linear-gradient(
-    90deg,
-    rgba(76, 65, 50, 1) 0%,
-    rgba(58, 49, 37, 1) 100%
-  );
-}
-
-.info-button {
-  cursor: pointer;
-}
-
-.long-cards {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 80px;
-}
-
-.long-card {
-  display: flex;
-  align-items: center;
-  padding: 13px;
-  width: 100%;
-  border-radius: 50px;
-  border: 3px solid #a75110;
-  margin-bottom: 1%;
-  background: linear-gradient(
-    180deg,
-    rgba(253, 221, 149, 1) 0%,
-    rgba(229, 196, 153, 1) 100%
-  );
-}
-
-.long-card-img {
-  width: 146px;
-  height: 56px;
-  border-radius: 35px;
-  margin-right: 35px;
-}
-
-.long-card-claim-button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 100px;
-  padding: 18px 25px;
-  color: white;
-  margin-right: 8px;
-  background: #f52d40;
-}
-
-.card-details-container {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-numbers {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 40%;
-}
-
-.number {
-  text-align: center;
-}
-
-.card-numbers-top-text {
-  color: #211212;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 2px;
-}
-
-.card-numbers-bottom-text {
-  text-decoration: none;
-  color: #b66316;
-  font-size: 16px;
-}
-
 .footer-container {
   display: flex;
   justify-content: space-between;
   width: 60%;
   padding: 50px 0;
+  max-width: 1200px;
 }
 
 .logo {
@@ -383,7 +265,7 @@ footer {
   bottom: 0;
   opacity: 1;
   visibility: visible;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .modal-background {
@@ -418,22 +300,22 @@ footer {
 }
 
 .modal-logo-button {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'proxima';
   font-weight: bold;
   border: none;
   border-radius: 100px;
-  padding: 18px 25px;
   color: white;
   margin-right: 8px;
   background: #4a2b2b;
   min-width: 160px;
   min-height: 52px;
-  background-size: cover;
+  background-size: 120px auto;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal-close-button {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'proxima';
   font-weight: bold;
   border: none;
   border-radius: 100px;
@@ -519,74 +401,16 @@ footer {
     line-height: normal;
   }
 
+  .header-img {
+    margin-bottom: 30px;
+  }
+
   .section-header {
     flex-direction: column;
   }
 
   .section-desc {
     text-align: center;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .card-content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .card-img {
-    height: 100px;
-    width: 100px;
-    border-radius: 30px;
-    margin: 0 15px 0 0;
-  }
-
-  .long-cards {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .long-card {
-    display: flex;
-    flex-direction: column;
-    width: 49.5%;
-    padding: 20px;
-  }
-
-  .long-card-img {
-    margin: 0 0 10px 0;
-  }
-
-  .card-details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .card-link {
-    margin-bottom: 0;
-  }
-
-  .card-numbers {
-    width: 100%;
-  }
-
-  .number {
-    margin: 10px 0;
-  }
-
-  .card-numbers-top-text {
-    margin-bottom: 0;
-  }
-
-  .card-numbers-bottom-text {
-    margin: 0px 10px 10px 10px;
   }
 
   .footer-container {
@@ -636,24 +460,6 @@ footer {
 
   .section-desc {
     font-size: 14px;
-  }
-
-  .card-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .card-link {
-    margin-bottom: 8px;
-  }
-
-  .claim-button {
-    padding: 8px 14px;
-    font-size: 12px;
-  }
-
-  .long-card {
-    width: 100%;
   }
 
   .top-row {

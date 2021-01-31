@@ -5,12 +5,14 @@ $(document).ready(function () {
   $(".info-button, .modal-background, .modal-close-button").click(function (e) {
     if ($(this).hasClass("info-button")) {
       const card = $(this).closest(".card, .long-card");
-      const logo = card.data("logo");
+      const logo = card.find(".card-logo").attr("src");
       const companyName = card.data("name");
 
       if (logo) {
         $(".modal-logo-button")
-          .css({ backgroundImage: `url(${logo})` })
+          .css({
+            backgroundImage: `url(${logo})`
+          })
           .text("");
       } else {
         $(".modal-logo-button")
@@ -43,8 +45,7 @@ $(document).ready(function () {
 
       const desktopCountdownText = [
         getUnit(days, "Day"),
-        getUnit(hours, "Hour"),
-        getUnit(minutes, "Minute")
+        getUnit(hours, "Hour")
       ].join(" ");
       const mobileCountdownText = [
         formatTime(days),
