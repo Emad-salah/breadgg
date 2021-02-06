@@ -60,7 +60,8 @@ $(document).ready(function () {
 
       const desktopCountdownText = [
         getUnit(days, "Day"),
-        getUnit(hours, "Hour")
+        getUnit(hours, "Hour"),
+        $(this).hasClass("has-minutes") ? getUnit(minutes, "Minute") : ""
       ].join(" ");
       const mobileCountdownText = [
         formatTime(days),
