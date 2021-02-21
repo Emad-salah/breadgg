@@ -49,8 +49,21 @@
   height: 157px;
 }
 
-.card-img > .card-logo {
+.card-img-roobet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #222546;
+  border-radius: 35px;
+  margin-right: 35px;
+  width: 198px;
+  height: 157px;
+}
+
+.card-img* > .card-logo {
   margin-bottom: 15px;
+  max-width: 150px;
 }
 
 .amount {
@@ -100,6 +113,17 @@
     rgba(76, 65, 50, 1) 0%,
     rgba(58, 49, 37, 1) 100%
   );
+}
+
+.claim-button-roobet {
+    font-family: "proxima", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  padding: 18px 25px;
+  color: white;
+  margin-right: 8px;
+  background-color: #222546;
 }
 
 .info-button {
