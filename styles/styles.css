@@ -69,7 +69,10 @@ header {
 footer {
   display: flex;
   justify-content: space-around;
-  background: #321b1b;
+  background-image: url(/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .giveaway {
@@ -80,6 +83,16 @@ footer {
   align-items: center;
   color: white;
   width: 100%;
+}
+
+.giveaway-text {
+  color: white;
+  text-decoration: none;
+}
+
+.giveaway-text:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .nav-container {
