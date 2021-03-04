@@ -500,95 +500,22 @@ footer {
   }
 }
 
-.iIlePk {
-    position: fixed;
-    left: 20px;
-    bottom: 24px;
-    z-index: 150;
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+.cookie-alert {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 320px;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
 }
 
-.etMbgb {
-    background-color: rgb(255, 255, 255);
-    padding-left: 24px;
-    padding-right: 24px;
-    height: 48px;
-    border-radius: 48px;
-    box-shadow: rgb(0 0 0 / 8%) 0px 8px 40px;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    flex-direction: row;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.jbxvPE {
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    border-width: 0px;
-    border-style: solid;
-    border-color: rgb(4, 4, 5);
-    display: flex;
-    flex-basis: auto;
-    flex-direction: column;
-    flex-shrink: 0;
-    min-height: 0px;
-    min-width: 0px;
-    max-width: 100%;
-    z-index: 0;
-}
-
-.ljMFUT {
-    text-decoration: none;
-    color: inherit;
-    font-size: 15px;
-    line-height: 20.7px;
-    font-family: inherit;
-    font-weight: inherit;
-}
-
-.fnyloc {
-    text-decoration: none;
-    color: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-}
-
-.eesVrg {
-    text-decoration: none;
-    color: rgb(0, 102, 255);
-}
-
-.iUEGhm {
-    opacity: 0.5;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-}
-
-.eXfkaP {
-    transition: all 0.12s ease-in-out 0s;
-    width: auto;
-    color: inherit;
-    padding: 0px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-style: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    font-stretch: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: normal;
-    overflow: visible;
-    outline: none;
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
 }
