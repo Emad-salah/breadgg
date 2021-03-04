@@ -361,12 +361,12 @@ footer {
   max-height: 400px;
 }
 
-.info .info-roobet > ul {
+.info, .info-roobet > ul {
   padding-left: 15px;
   margin-bottom: 20px;
 }
 
-.info .info-roobet > p {
+.info, .info-roobet > p {
   margin-bottom: 20px;
 }
 
