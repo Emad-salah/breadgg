@@ -127,6 +127,10 @@
   background-color: #222546;
 }
 
+.bg-2 {
+  background-color: #1d2c31;
+}
+
 .info-button {
   cursor: pointer;
   margin: 0 5px;
