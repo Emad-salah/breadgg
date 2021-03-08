@@ -78,7 +78,6 @@ footer {
 .giveaway {
   display: flex;
   background: #a75110;
-  height: 31px;
   justify-content: center;
   align-items: center;
   color: white;
@@ -87,7 +86,10 @@ footer {
 
 .giveaway-text {
   color: white;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
+  padding: 5.5px;
 }
 
 .giveaway-text:hover {
@@ -352,7 +354,8 @@ footer {
   margin-bottom: 35px;
 }
 
-.info, .info-robbet {
+.info,
+.info-robbet {
   color: white;
   font-size: 14px;
   line-height: 20px;
@@ -361,12 +364,14 @@ footer {
   max-height: 400px;
 }
 
-.info, .info-roobet > ul {
+.info,
+.info-roobet > ul {
   padding-left: 15px;
   margin-bottom: 20px;
 }
 
-.info, .info-roobet > p {
+.info,
+.info-roobet > p {
   margin-bottom: 20px;
 }
 
@@ -445,12 +450,16 @@ footer {
   }
 
   .footer-links-container {
-    margin: 0 10px;
-    flex: 1;
+    margin: 0 10px 10px 10px;
   }
 
   .footer-text {
     width: 100%;
+  }
+
+  .small-footer {
+    width: calc(50% - 20px);
+    flex-shrink: 0;
   }
 }
 
@@ -499,4 +508,3 @@ footer {
     font-size: 12px;
   }
 }
-
